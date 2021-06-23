@@ -18,8 +18,6 @@ export class incomeTypes {
     @Prop({ required: true })
     status:       boolean;
 
-    @Prop()
-    createdAt =  new Date();
 }
 
 export const incomeTypesSchema = SchemaFactory.createForClass(incomeTypes);

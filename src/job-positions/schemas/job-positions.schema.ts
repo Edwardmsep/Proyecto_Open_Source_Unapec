@@ -20,9 +20,6 @@ export class JobPosition {
 
     @Prop({ required: true })
     maximumSalaryLevel:       number;
-
-    @Prop()
-    createdAt =  new Date();
 }
 
 export const jobPositionSchema = SchemaFactory.createForClass(JobPosition);

@@ -3,5 +3,4 @@ export class incomeTypesDto{
     readonly  name: string;
     readonly  salary: number;
     readonly  status: boolean;
-    readonly  creatAt: string;
 }
