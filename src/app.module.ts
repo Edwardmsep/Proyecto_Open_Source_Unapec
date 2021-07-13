@@ -7,9 +7,19 @@ import { AppService } from './app.service';
 //modules
 import { IncomeTypesModule } from './income-types/income-types.module';
 import { JobPositionsModule } from './job-positions/job-positions.module';
+import { DepartmentsModule } from './departments/departments.module';
+import { EmployeesModule } from './employees/employees.module';
+import { DeductionsModule } from './deductions/deductions.module';
 
 @Module({
-  imports: [IncomeTypesModule, JobPositionsModule, MongooseModule.forRoot('mongodb://localhost/paysheet')],
+  imports: [
+    MongooseModule.forRoot('mongodb://localhost/paysheet'),
+    IncomeTypesModule, 
+    JobPositionsModule, 
+    DepartmentsModule,
+    EmployeesModule,
+    DeductionsModule
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
